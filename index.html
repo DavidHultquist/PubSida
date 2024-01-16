@@ -8,13 +8,68 @@
     <link rel="icon" href="/img/GalleriSunDjur.png" type="image/png">
 </head>
 <body>
+    <div>
+        <button id="knapp1" onclick="byttillbild()">Klicka för att byta loggan till bild</button>
+        <button id="knapp2" onclick="byttilllogga()">Klicka för att byta bild till loggan</button>
+    </div>
     <div class="images">
         <img class="hero" alt="Antilop" src="img/heroImage.webp">
         <div class="gallery">
-            <img alt="Antilop" src="img/GalleriAnti.webp">
-            <img alt="Antilop" src="img/GalleriBildDjur.webp">
+            <div class="gallery">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="img/GalleriAnti.webp" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="img/GalleriBildDjur.webp" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="img/GalleriSunDjur.webp" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                </div>
+            
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img id="bild" alt="Antilop" src="img/GalleriAnti.webp">
+                    </div>
+                    <div class="mySlides fade">
+                        <img id="logga" alt="Antilop" src="img/GalleriBildDjur.webp">
+                    </div>
+                    <div class="mySlides fade">
+                        <img alt="Antilop" src="img/GalleriSunDjur.webp">
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="img/otherImage1.webp" style="width:100%">
+                        <div class="text">Caption Four</div>
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="img/otherImage2.webp" style="width:100%">
+                        <div class="text">Caption Five</div>
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="img/otherImage3.webp" style="width:100%">
+                        <div class="text">Caption Six</div>
+                    </div>
+                </div>
+            </div>
+            
+          
+
+            <img id="bild" alt="Antilop" src="img/GalleriAnti.webp">
+            <img id="logga" alt="Antilop" src="img/GalleriBildDjur.webp">
             <img alt="Antilop" src="img/GalleriSunDjur.webp">
+
         </div>
     </div>
-</body>
+        <script src="js/script.js"></script>
+    </body>
 </html>
